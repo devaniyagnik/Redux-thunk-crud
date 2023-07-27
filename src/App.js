@@ -16,7 +16,6 @@ class App extends Component {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/AddData" element={<AddDataForm />} />
             <Route exact path="/updateData/:id" element={<UpdateDataForm />} />
-          
           </Routes>
         </BrowserRouter>
       </>

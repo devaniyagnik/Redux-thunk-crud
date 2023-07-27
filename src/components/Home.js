@@ -7,7 +7,7 @@ import { deleteData } from '../actions/dataActions';
 export class Home extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
+    // console.log(props);
     this.state = {
       data: this.props.data,
     };
@@ -15,18 +15,18 @@ export class Home extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.data !== this.props.data) {
-      console.log("Data has changed:", this.props.data);
+      // console.log("Data has changed:", this.props.data);
       this.setState({ data: this.props.data });
     }
   }
 
   handleDelete = (index) => {
     this.props.deleteData(index);
-    console.log(this.state.data);
+    // console.log(this.state.data);
   };
 
   render() {
-    console.log(this.state.data);
+    // console.log(this.state.data);
     return (
       <>
         <div className="container mt-5">

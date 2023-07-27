@@ -2,7 +2,7 @@ import { ADD_DATA, DELETE_DATA, UPDATE_DATA } from './actionTypes';
 
 // Action creator for adding data
 export const addData = (data) => {
-  console.log("add",data)
+  
   return {
     type: ADD_DATA,    // Action type for adding data
     payload: data,     // The data to be added
@@ -19,7 +19,7 @@ export const deleteData = (id) => {
 
 // Action creator for updating data
 export const updateData = (id, data) => {
-  console.log('Update Data Action:', id, data);
+  
   return {
     type: UPDATE_DATA, // Action type for updating data
     payload: { id, data }, // Object containing id (index of the data) and data (updated data)

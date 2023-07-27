@@ -66,8 +66,7 @@ export class AddDataForm extends Component {
       alert("Please select a language");
     } else {
       this.props.addData(this.state.formData);
-      // console.log(this.state.formData);
-      // Navigate to the home page after form submission
+     
       this.props.navigate("/");
     }
   };
